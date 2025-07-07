@@ -184,6 +184,20 @@ strong {
     font-size: 20px;
 }
 
+/* Style Projetos  */
+#projetos {
+    background-color: #F8F9ED;
+    padding: 50px 150px;
+}
+
+.projetos-titulo {
+    color: #57123F;
+    font-size: 30px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
 /*Style Rodapé*/
 .rodape {
     background-color: #566129;
