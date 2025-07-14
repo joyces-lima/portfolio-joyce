@@ -1,231 +1,261 @@
 /*Style Geral*/
-p{
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight:<weight>;
-    font-style: normal;
+p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight:<weight>;
-    font-style: normal;
-    text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
 }
 
 h3 {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight:<weight>;
-    font-style: normal;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 strong {
-    color:#57123F
+  color: #57123f;
 }
 
+.link {
+  color: #57123f;
+}
 /*Style Menu*/
 #menu {
-    display: flex;
-    justify-content: space-between;;
-    background-color: #566129;
-    padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #566129;
+  padding: 18px 25px;
+  border-radius: 10px;
 }
 
 .logo {
-    color: #F8F9ED;
-    font-size: 22px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
+  color: #f8f9ed;
+  font-size: 22px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navegacao ul {
-    display: flex;
-    list-style: none;
-    color: #F8F9ED;
+  display: flex;
+  list-style: none;
+  color: #f8f9ed;
 }
 
 .navegacao ul li {
-    margin-right: 15px;
-    font-size: 16px;
-    font-weight: bold;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .navegacao ul li a {
-    color: #F8F9ED;
-    text-decoration: none;
+  color: #f8f9ed;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*Style Sobre*/
 #sobre {
-    text-align: center;
-    background-color: #F8F9ED;
-    padding: 40px 15px;
+  text-align: justify;
+  background-color: #f8f9ed;
+  padding: 40px 100px;
+  border-radius: 10px;
 }
-
+.container-sobre {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
 .sobre-imagem {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #57123f;
+  border-radius: 25%;
+  object-fit: cover;
 }
 
 .sobre-nome {
-    color: #57123F;
-    font-size: 32px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 15px;
+  color: #57123f;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
 }
 
 .sobre-titulo {
-    color: #566129;
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    margin-top: 8px;
+  color: #566129;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 8px;
 }
 
-.sobre-descricao {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 10px;
-    max-width: 700px; 
-    margin-left: auto;
-    margin-right: auto;
-
+.descricao-texto {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 2em; /* Adiciona recuo na primeira linha do parágrafo */
 }
 
 /*Style Formação*/
 #formacao {
-    background-color: #F8F9ED;
-    padding: 40px 15px;
+  background-color: #f8f9ed;
+  padding: 40px 15px;
+  background-color: #57123f;
+  border-radius: 10px;
 }
 
 .formacao-titulo {
-    text-align: center;
-    color: #57123F;
-    font-size: 32px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    margin-bottom: 30px; 
+  text-align: center;
+  color: #f8f9ed;
+  font-size: 32px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 .formacao-lista {
-    display: flex;
-    gap: 20px; 
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .formacao-item {
-    flex: 1; /* Faz com que cada item ocupe o mesmo espaço disponível */
-    /* Adicione outros estilos para os itens, como padding, border, background, etc. */
-    padding: 15px;
-    border: 1px solid #57123F;
-    border-radius: 8px;
-    height: 200px; /* Define uma altura fixa para os itens */
+  padding: 15px;
+  background-color: #f8f9ed;
+  border-radius: 8px;
+  height: 200px; /* Define uma altura fixa para os itens */
+  width: 65%;
 }
 
 .formacao-lista h3 {
-    font-size: 20px;
-    color: #566129;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: #566129;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .formacao-lista a {
-    color: #57123F;
-    font-size: 20px;
-    margin-bottom: 15px;
-} 
+  color: #57123f;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .formacao-lista p {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*Style Cursos*/
 #cursos {
-    background-color: #F8F9ED;
-    padding: 50px 150px;
+  background-color: #f8f9ed;
+  padding: 40px 15px;
 }
 
 .cursos-titulo {
-    color: #57123F;
-    font-size: 30px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    margin-bottom: 30px;
+  text-align: center;
+  color: #57123f;
+  font-size: 32px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .cursos-lista {
-    width: 600px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Coloca os cards um embaixo do outro */
+  gap: 25px; /* Espaçamento entre os cards */
+  max-width: 900px; /* Largura máxima para a lista */
+  margin: 0 auto; /* Centraliza a lista na página */
 }
 
-.cursos-lista h3 {
-    font-size: 20px;
-    color: #566129;
-    margin-bottom: 10px;
-    width: 180px;
+.curso-item {
+  display: flex; /* Faz a imagem e o texto ficarem lado a lado */
+  align-items: center; /* Alinha verticalmente a imagem e o texto */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+  padding: 20px;
 }
 
-.cursos-lista a {
-    color:#57123F;
-    font-size: 20px;
-    margin-bottom: 15px;
+.curso-imagem {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; /* Impede que a imagem encolha */
+  max-width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 25px;
 }
 
-.cursos-lista p {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20px;
+.curso-info h3 {
+  color: #566129;
+  margin-bottom: 5px;
 }
 
 /* Style Projetos  */
 #projetos {
-    background-color: #F8F9ED;
-    padding: 50px 150px;
+  background-color: #f8f9ed;
+  padding: 50px 150px;
 }
 
 .projetos-titulo {
-    color: #57123F;
-    font-size: 30px;
-    font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    margin-bottom: 30px;
+  color: #57123f;
+  font-size: 30px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /*Style Rodapé*/
 .rodape {
-    background-color: #566129;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+  background-color: #566129;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
 .rodape-contatos {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .rodape-contatos a {
-    color:  #F8F9ED;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 5px; 
+  color: #f8f9ed;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 .rodape-contatos img {
-    vertical-align: middle;
-    width: 18px; 
-    height: 18px;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
 }
 
 .logo-joyce {
-    height: 140px;
+  height: 140px;
 }
