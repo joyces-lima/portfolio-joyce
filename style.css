@@ -113,7 +113,6 @@ strong {
 
 /*Style Formação*/
 #formacao {
-  background-color: #f8f9ed;
   padding: 40px 15px;
   background-color: #57123f;
   border-radius: 10px;
@@ -235,6 +234,7 @@ strong {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+  border-radius: 8px;
 }
 
 .rodape-contatos {
