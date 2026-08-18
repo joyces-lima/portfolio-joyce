@@ -16,7 +16,7 @@
 
 <body>
     <header id="menu">
-        <img class="logo" src="Imagens/logo_projetoC.png">
+        <img class="logo" src="Imagens/logo_projetoC.png" alt="Logo de Joyce Sarmento de Lima">
         <nav class="navegacao">
             <ul>
                 <li><a href="#sobre">Sobre mim</a></li>
@@ -63,7 +63,9 @@
                         <strong>paciência, criatividade, constância e raciocínio</strong>.
                     </p>
                     <p class="descricao-texto">
-                        Nos meus tempos livres, <strong>assistir séries, filmes</strong>  (principalmente musicais, romance e animações), passar tempo com a família e ouvir música. Entre meus artistas favoritos estão: <strong>Beyoncé, One Direction e Of Monsters and Men.</strong>
+                        Nos meus tempos livres, <strong>assistir séries, filmes</strong> (principalmente musicais,
+                        romance e animações), passar tempo com a família e ouvir música. Entre meus artistas favoritos
+                        estão: <strong>Beyoncé, One Direction e Of Monsters and Men.</strong>
                     </p>
                 </div>
                 <div class="sobre-imagem-container">
@@ -92,50 +94,110 @@
             </div>
         </section>
 
+        <!-- SEÇÃO DE CURSOS (Transformada em Carrossel) -->
         <section id="cursos">
             <h2 class="cursos-titulo">Cursos</h2>
-            <div class="cursos-lista"> <!-- Container principal para os cards de cursos -->
-                <!-- Card do Curso 1 -->
-                <div class="curso-item">
-                    <img class="curso-imagem" src="Imagens/logo_minas.png" alt="Logo do curso">
-                    <div class="curso-info">
-                        <h3>Fundamentos da Programação</h3>
-                        <a href="https://minasprogramam.com/" target="_blank" class="link">Instituto Minas Programam</a>
-                        <p>Curso introdutório de programação, ensinando conceitos fundamentais através de <strong>TypeScript, Git</strong> e <strong class="strong-curso">Lógica de                      programação.</strong> Ideal para iniciantes que desejam aprender programação com uma linguagem moderna e tipada.</p>
-                    </div>
-            </div>
 
-            <div class="cursos-lista"> <!-- Container principal para os cards de cursos -->
-                <!-- Card do Curso 2 -->
-                <div class="curso-item">
-                    <img class="curso-imagem" src="Imagens/logo_minas.png" alt="Logo do curso">
-                    <div class="curso-info">
-                        <h3>Introdução à Programação</h3>
-                        <a href="https://minasprogramam.com/" target="_blank" class="link">Instituto Minas Programam</a>
-                        <p>Curso introdutório de desenvolvimento Front-End, ensinando conceitos básicos de <strong>HTML,
-                                CSS, JavaScript, Git</strong> e <strong class="strong-curso">Lógica de
-                                programação.</strong></p>
+            <!-- Estrutura Principal do Carrossel -->
+            <!-- Envolve os botões de navegação e o conteúdo visível dos cursos -->
+            <div class="carrossel-container">
+
+                <!-- Botão de navegação para o curso anterior -->
+                <button class="carrossel-btn btn-prev" id="btn-prev-curso" aria-label="Curso anterior">&#10094;</button>
+
+                <!-- Janela de visualização (Wrapper) que oculta os cursos que estão fora da tela (overflow: hidden) -->
+                <div class="carrossel-wrapper">
+                    <!-- Trilha (Track) que contém todos os cards em linha horizontal -->
+                    <!-- O JavaScript altera o transform: translateX() deste container para deslizar entre os cursos -->
+                    <div class="carrossel-track" id="carrossel-track">
+
+                        <!-- Card do Curso 1 -->
+                        <div class="curso-item carrossel-slide">
+                            <img class="curso-imagem" src="Imagens/logo_programaria.png" alt="Logo da PrograMaria">
+                            <div class="curso-info">
+                                <h3>Análise de Dados | Meus primeiros passos em Python!</h3>
+                                <a href="https://www.programaria.org/" target="_blank" class="link">PrograMaria</a>
+                                <p>Curso completo de análise de dados cobrindo desde planilhas e <strong>Python (Pandas,
+                                        NumPy, SciPy)</strong>
+                                    até bancos de dados relacionais com <strong>SQL, DBeaver e SQLite</strong>. Inclui
+                                    visualização de dados com
+                                    <strong>Matplotlib, Seaborn, Plotly e Looker Studio</strong>, além de introdução a
+                                    <strong class="strong-curso">Machine Learning</strong> e projeto prático com a
+                                    pesquisa Data Hackers.
+                                </p>
+                                <a href="https://euprogramo.thinkific.com/certificates/aw2hjeupfd" target="_blank"
+                                    class="btn-certificado">Ver Certificado</a>
+                            </div>
+                        </div>
+
+                        <!-- Card do Curso 2 -->
+                        <div class="curso-item carrossel-slide">
+                            <img class="curso-imagem" src="Imagens/logo_minas.png"
+                                alt="Logo do curso Fundamentos da Programação">
+                            <div class="curso-info">
+                                <h3>Fundamentos da Programação</h3>
+                                <a href="https://minasprogramam.com/" target="_blank" class="link">Instituto Minas
+                                    Programam</a>
+                                <p>Curso introdutório de programação, ensinando conceitos fundamentais através de
+                                    <strong>TypeScript, Git</strong> e <strong class="strong-curso">Lógica de
+                                        programação.</strong> Ideal para iniciantes que desejam aprender programação com
+                                    uma linguagem moderna e tipada.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card do Curso 3 -->
+                        <div class="curso-item carrossel-slide">
+                            <img class="curso-imagem" src="Imagens/logo_minas.png"
+                                alt="Logo do curso Introdução à Programação">
+                            <div class="curso-info">
+                                <h3>Introdução à Programação</h3>
+                                <a href="https://minasprogramam.com/" target="_blank" class="link">Instituto Minas
+                                    Programam</a>
+                                <p>Curso introdutório de desenvolvimento Front-End, ensinando conceitos básicos de
+                                    <strong>HTML, CSS, JavaScript, Git</strong> e <strong class="strong-curso">Lógica de
+                                        programação.</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Card do Curso 4 -->
+                        <div class="curso-item carrossel-slide">
+                            <img class="curso-imagem" src="Imagens/Wadhwani-Foundation-Logo.png"
+                                alt="Logo do curso Profissionalismo">
+                            <div class="curso-info">
+                                <h3>Profissionalismo</h3>
+                                <a href="https://wadhwanifoundation.org/pt" target="_blank" class="link">Wadhwani
+                                    Foundation</a>
+                                <p>Curso sobre como se comportar em um ambiente de trabalho, como se portar em
+                                    entrevistas e como se preparar para o mercado de trabalho.</p>
+                            </div>
+                        </div>
+
                     </div>
-                    
                 </div>
 
-                <!-- Card do Curso 3 -->
-                <div class="curso-item">
-                    <img class="curso-imagem" src="Imagens/Wadhwani-Foundation-Logo.png" alt="Logo do curso">
-                    <div class="curso-info">
-                        <h3>Profissionalismo</h3>
-                        <a href="https://wadhwanifoundation.org/pt" target="_blank" class="link">Wadhwani Foundation</a>
-                        <p>Curso sobre como se comportar em um ambiente de trabalho, como se portar em entrevistas e
-                            como se preparar para o mercado de trabalho.</p>
-                    </div>
-                </div>
+                <!-- Botão de navegação para o próximo curso -->
+                <button class="carrossel-btn btn-next" id="btn-next-curso" aria-label="Próximo curso">&#10095;</button>
             </div>
+
+            <!-- Indicadores (Bolinhas): Serão ativados e clicáveis via JavaScript -->
+            <div class="carrossel-indicadores" id="carrossel-indicadores"></div>
         </section>
 
         <section id="projetos">
             <h2 class="projetos-titulo">Projetos</h2>
-            <!--Quase do mesmo jeito da section cursos-->
-            <p>Em breve atualizações!!</p>
+            <div class="curso-item">
+                <img class="curso-imagem" src="Imagens/print_dashboard_2022.png"
+                    alt="Preview do Dashboard de Diversidade Data Hackers 2022">
+                <div class="curso-info">
+                    <h3>Análise de Diversidade no Mercado Tech (Data Hackers 2022)</h3>
+                    <a href="https://datastudio.google.com/reporting/cdd9d698-1c6f-4c4b-adca-90fc63f640e8/page/I26yF"
+                        target="_blank" class="link">Ver Dashboard Interativo</a>
+                    <p>Dashboard interativo desenvolvido no Looker Studio com base na pesquisa do Data Hackers 2022. O
+                        projeto analisa dados demográficos (gênero, cor/raça, idade, PCD), cruzamentos de carreira
+                        (cargos, salários, modelos de trabalho) e fatores sociais de diversidade no ecossistema de
+                        tecnologia.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="rodape">
@@ -150,6 +212,9 @@
             <img class="logo-joyce" src="Imagens/logo_projetoC.png" alt="Logo de Joyce Sarmento de Lima">
         </div>
     </footer>
+
+    <!-- Inclusão do arquivo JavaScript responsável pela funcionalidade do carrossel -->
+    <script src="script.js"></script>
 </body>
 
 </html>

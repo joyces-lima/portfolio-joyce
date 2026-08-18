@@ -1,77 +1,76 @@
-# Meu Portfólio Pessoal - Joyce Sarmento de Lima
+# 👩‍💻 Portfólio Pessoal - Joyce Sarmento de Lima
 
------
+---
 
-Esse portfólio foi criado, inicialmente, como projeto de conclusão do **curso de Introdução à programação** do **Minas Programam**.
-Bem-vindo(a) ao meu portfólio pessoal\! Este projeto é uma vitrine dos meus trabalhos e habilidades em desenvolvimento web, com foco em **HTML** e **CSS**. Ele foi criado para apresentar quem sou, o que faço e como posso agregar valor a projetos e equipes.
+> Esse portfólio foi criado, inicialmente, como projeto de conclusão do **curso de Introdução à Programação** do **Instituto Minas Programam** e vem sendo continuamente atualizado com novos aprendizados, cursos e projetos.
 
+Bem-vindo(a) ao meu portfólio pessoal! Este projeto é uma vitrine da minha trajetória, estudos e habilidades em desenvolvimento web e tecnologia, com foco em **HTML5**, **CSS3** e **JavaScript**.
 
------
+---
 
 ## 🚀 Tecnologias Utilizadas
 
-Este portfólio é construído puramente com as linguagens fundamentais da web:
+Este portfólio foi desenvolvido utilizando as principais linguagens fundamentais do desenvolvimento Web Front-End:
 
-  * **HTML5**: Utilizado para estruturar todo o conteúdo do portfólio, incluindo as seções "Sobre Mim", "Formação", "Cursos" e "Projetos".
-  * **CSS3**: Responsável por toda a estilização, layout responsivo e design visual do site. Inclui o uso de fontes personalizadas do Google Fonts (`Abril Fatface` e `Raleway`).
+* **HTML5**: Estruturação semântica de todo o conteúdo do site (seções "Sobre Mim", "Formação", "Cursos" e "Projetos").
+* **CSS3**: Estilização moderna, layout responsivo, paleta de cores personalizada, transições suaves e tipografia do Google Fonts (`Abril Fatface` e `Raleway`).
+* **JavaScript (ES6+)**: Lógica interativa para o **Carrossel de Cursos**, controle de navegação (botões, indicadores, teclado e autoplay) e manipulação dinâmica do DOM.
 
------
+---
 
 ## ✨ Funcionalidades Principais
 
-  * **Design Responsivo**: Adaptado para visualização em diferentes tamanhos de tela (desktops, tablets e smartphones), garantindo uma boa experiência de usuário.
-  * **Navegação Intuitiva**: Menu de cabeçalho com links âncora para facilitar a navegação entre as seções: "Sobre mim", "Formação", "Cursos" e "Projetos".
-  * **Seção "Sobre Mim"**: Apresenta informações pessoais, hobbies e motivações, com um design de duas colunas que alterna a posição da imagem e do texto.
-  * **Seção "Formação"**: Detalha a formação acadêmica, incluindo o Bacharelado em Tecnologia da Informação na Univesp e o Ensino Médio na Fundação Bradesco.
-  * **Seção "Cursos"**: Exibe os cursos complementares realizados, como "Desenvolvimento Front-End" do Instituto Minas Programam e "Profissionalismo" da Wadhwani Foundation, com informações e links.
-  * **Seção "Projetos"**: Área dedicada à apresentação de futuros projetos.
-  * **Rodapé Completo**: Contém links para o GitHub e LinkedIn, além de um logo pessoal.
+* **Design Responsivo**: Adaptado para uma excelente experiência em diferentes tamanhos de tela (desktops, tablets e smartphones).
+* **Navegação Intuitiva**: Menu de cabeçalho fixo com links âncora para rápida navegação entre as seções.
+* **Seção "Sobre Mim"**: Apresentação pessoal, hobbies, interesses (leitura, trabalhos manuais) e motivações acadêmicas.
+* **Seção "Formação"**: Detalhes da graduação em Bacharelado em Tecnologia da Informação (Univesp) e Ensino Médio (Fundação Bradesco).
+* **Seção "Cursos" (Carrossel Interativo)**:
+  * Exibição dos cards de cursos em formato de carrossel deslizante horizontal.
+  * Controles de navegação por botões laterais (Anterior / Próximo) e pontos indicadores (bolinhas).
+  * Avanço automático dos slides com pausa inteligente ao passar o ponteiro do mouse sobre o carrossel.
+  * Suporte à navegação pelas setas do teclado (`←` e `→`).
+  * Links diretos para verificação de certificados (ex: Análise de Dados pela PrograMaria).
+* **Seção "Projetos"**: Espaço reservado e estruturado para apresentar futuros projetos de software.
+* **Rodapé Completo**: Links diretos para GitHub, LinkedIn e marca pessoal.
 
------
+---
 
 ## 📂 Estrutura do Projeto
 
-A estrutura de arquivos é organizada para clareza e manutenção:
-
 ```
 .
-├── index.html
-├── css/
-│   └── style.css
-├── Imagens/
+├── index.html       # Arquivo HTML principal com a estrutura de seções
+├── style.css        # Estilos CSS, variáveis de design, animações e responsividade
+├── script.js        # Lógica JavaScript para interatividade do carrossel
+├── Imagens/         # Logos, fotos de perfil, ícones de redes sociais e certificados
+│   ├── github-verdePastel.png
+│   ├── joyce_bienal.jpg
+│   ├── linkedin-verde.png
+│   ├── logo_minas.png
+│   ├── logo_programaria.png
 │   ├── logo_projeto.ico
 │   ├── logo_projetoC.png
 │   ├── self_joyce.jpg
-│   ├── joyce_bienal.jpg
-│   ├── logo_minas.png
-│   ├── Wadhwani-Foundation-Logo.png
-│   ├── github-verdePastel.png
-│   └── linkedin-verde.png
-└── README.md
+│   └── Wadhwani-Foundation-Logo.png
+└── README.md        # Documentação detalhada do projeto
 ```
 
-  * `index.html`: O arquivo principal HTML que estrutura todas as seções do portfólio.
-  * `css/style.css`: Contém todas as regras CSS para o design e responsividade do site.
-  * `Imagens/`: Diretório que armazena todas as imagens utilizadas no portfólio (logos, fotos pessoais, ícones de redes sociais, etc.).
-
------
+---
 
 ## 🌐 Acesse o Portfólio Online
 
-(Se você tiver seu portfólio hospedado online, adicione o link aqui. Exemplo abaixo):
+Você pode visualizar este portfólio hospedado online através do link:
 
-Você pode visualizar este portfólio hospedado online aqui:
+👉 [https://portifolio-joyceslima.netlify.app/](https://portifolio-joyceslima.netlify.app/)
 
-👉 [https://portifolio-joyceslima.netlify.app/]
-
------
+---
 
 ## 🤝 Contato
 
-Ficou interessado(a) no meu trabalho ou gostaria de conversar sobre oportunidades? Sinta-se à vontade para entrar em contato\!
+Ficou interessado(a) no meu trabalho ou gostaria de conversar sobre oportunidades? Sinta-se à vontade para entrar em contato!
 
-  * **GitHub**: [https://github.com/joyces-lima](https://github.com/joyces-lima)
-  * **LinkedIn**: [https://www.linkedin.com/in/joyce-sarmento-de-lima-50047a328/](https://www.linkedin.com/in/joyce-sarmento-de-lima-50047a328/)
-  * **Email**: [jsarmentodelima@gmail.com] (jsarmentodelima@gmail.com)
+* **GitHub**: [github.com/joyces-lima](https://github.com/joyces-lima)
+* **LinkedIn**: [linkedin.com/in/joyce-sarmento-de-lima-50047a328](https://www.linkedin.com/in/joyce-sarmento-de-lima-50047a328/)
+* **E-mail**: [jsarmentodelima@gmail.com](mailto:jsarmentodelima@gmail.com)
 
------
+---

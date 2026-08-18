@@ -163,7 +163,10 @@ strong {
   margin-right: 20px;
 }
 
-/*Style Cursos*/
+/* ==========================================================================
+   ESTILOS DO CARROSSEL DE CURSOS
+   ========================================================================== */
+
 #cursos {
   background-color: #f8f9ed;
   padding: 40px 15px;
@@ -178,35 +181,155 @@ strong {
   margin-bottom: 30px;
 }
 
-.cursos-lista {
-  display: flex;
-  flex-direction: column; /* Coloca os cards um embaixo do outro */
-  gap: 25px; /* Espaçamento entre os cards */
-  max-width: 900px; /* Largura máxima para a lista */
-  margin: 0 auto; /* Centraliza a lista na página */
+.btn-certificado {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: 2px solid #566129;
+  color: #566129;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
+.btn-certificado:hover {
+  background-color: #566129;
+  color: #ffffff;
+} 
+
+/* Container principal do carrossel: alinha os botões laterais (Anterior / Próximo) e a janela central */
+.carrossel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 950px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+/* Wrapper visível: funciona como uma "janela" com largura fixa que esconde os elementos fora dela */
+.carrossel-wrapper {
+  overflow: hidden; /* Esconde os slides que saem da área visível */
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(87, 18, 63, 0.08); /* Sombra elegante combinando com a paleta */
+  border: 1px solid rgba(86, 97, 41, 0.15);
+}
+
+/* Trilha dos slides: coloca todos os cards lado a lado na horizontal */
+.carrossel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Animação suave no deslizar do carrossel */
+  width: 100%;
+}
+
+/* Cada card de curso individual dentro do carrossel */
 .curso-item {
-  display: flex; /* Faz a imagem e o texto ficarem lado a lado */
-  align-items: center; /* Alinha verticalmente a imagem e o texto */
-  gap: 20px; /* Espaço entre a imagem e o texto */
-  padding: 20px;
+  flex: 0 0 100%; /* Cada card ocupe exatamente 100% da largura do wrapper */
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex; /* Mantém imagem e textos alinhados lado a lado */
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
 }
 
 .curso-imagem {
   width: 120px;
   height: 120px;
-  object-fit: cover;
+  object-fit: contain; /* Ajusta a logo mantendo suas proporções sem cortar */
   border-radius: 8px;
-  flex-shrink: 0; /* Impede que a imagem encolha */
-  max-width: 100%;
-  height: auto; /* Mantém a proporção da imagem */
-  margin-right: 25px;
+  flex-shrink: 0; /* Impede a imagem de encolher em telas menores */
+  margin-right: 15px;
 }
 
 .curso-info h3 {
   color: #566129;
-  margin-bottom: 5px;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.curso-info p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Estilo dos Botões de Navegação (Setas) */
+.carrossel-btn {
+  background-color: #57123f; /* Cor roxa refinada do tema */
+  color: #f8f9ed;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; /* Torna o botão perfeitamente redondo */
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.carrossel-btn:hover {
+  background-color: #566129; /* Muda para a cor verde oliva do tema ao passar o mouse */
+  transform: scale(1.1); /* Efeito sutil de leve ampliação */
+}
+
+/* Estilo dos Indicadores (Bolinhas na parte inferior do carrossel) */
+.carrossel-indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+/* Estado da bolinha ativa (representa o card visível no momento) */
+.indicador.ativo {
+  background-color: #57123f;
+  transform: scale(1.25); /* Fica um pouco maior para se destacar */
+}
+
+/* Adaptabilidade para telas pequenas / Celulares */
+@media (max-width: 650px) {
+  .carrossel-container {
+    gap: 5px;
+  }
+
+  .curso-item {
+    flex-direction: column; /* Em celulares, a imagem fica acima do texto */
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .curso-imagem {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .carrossel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
 }
 
 /* Style Projetos  */
