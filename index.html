@@ -36,7 +36,7 @@
                     <h2 class="sobre-nome">Joyce Sarmento de Lima</h2>
                     <h3 class="sobre-titulo">Estudante de Tecnologia da Informação</h3>
                     <p class="descricao-texto">
-                        Olá! Meu nome é Joyce, tenho 27 anos e sou <strong>estudante de
+                        Olá! Meu nome é Joyce, tenho 28 anos e sou <strong>estudante de
                             Tecnologia da Informação</strong>. Sou apaixonada por tecnologia e estou sempre em busca de
                         aprender mais sobre o mundo da programação e desenvolvimento de software. Atualmente, estou
                         cursando o <strong>Bacharelado em Tecnologia da Informação na
@@ -78,18 +78,28 @@
             <h2 class="formacao-titulo">Formação</h2>
             <div class="formacao-lista">
                 <div class="formacao-item">
-                    <h3>Cursando - Bacharelado em Tecnologia da Informação</h3>
+                    <div class="formacao-header">
+                        <h3>Bacharelado em Tecnologia da Informação</h3>
+                        <span class="status-badge status-cursando">Cursando</span>
+                    </div>
                     <a href="https://univesp.br/cursos/bacharel-em-tecnologia-da-informacao"
-                        target="_blank">Universidade Virtual do Estado de São Paulo</a>
+                        target="_blank" class="formacao-instituicao">
+                        <span>Universidade Virtual do Estado de São Paulo (Univesp)</span>
+                        <svg class="link-icone" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
                     <p>Curso de graduação em Tecnologia da Informação, com foco em desenvolvimento de soluções que
                         envolvem software, web, nuvem e mobile. <strong>Previsão de conclusão:</strong> 2027.</p>
                 </div>
                 <div class="formacao-item">
-                    <h3>Ensino Médio</h3>
-                    <a href="https://fundacao.bradesco/pt-BR" target="_blank">Fundação Bradesco</a>
-                    <p>Conclui o Ensino Médio no ano de 2015, na Fundação Bradesco. Onde tive um ensino que vai além do
-                        quesito conteudista, nela tive ensinos de como me tornar uma cidadã e contribuir com a
-                        sociedade.</p>
+                    <div class="formacao-header">
+                        <h3>Ensino Médio</h3>
+                        <span class="status-badge status-concluido">Concluído</span>
+                    </div>
+                    <a href="https://fundacao.bradesco/pt-BR" target="_blank" class="formacao-instituicao">
+                        <span>Fundação Bradesco</span>
+                        <svg class="link-icone" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <p>Concluí o Ensino Médio no ano de 2015, na Fundação Bradesco, com uma formação que vai além do quesito conteudista, desenvolvendo a cidadania e a contribuição para a sociedade.</p>
                 </div>
             </div>
         </section>
@@ -141,7 +151,8 @@
                                 <p>Curso introdutório de programação, ensinando conceitos fundamentais através de
                                     <strong>TypeScript, Git</strong> e <strong class="strong-curso">Lógica de
                                         programação.</strong> Ideal para iniciantes que desejam aprender programação com
-                                    uma linguagem moderna e tipada.</p>
+                                    uma linguagem moderna e tipada.
+                                </p>
                             </div>
                         </div>
 
@@ -155,7 +166,8 @@
                                     Programam</a>
                                 <p>Curso introdutório de desenvolvimento Front-End, ensinando conceitos básicos de
                                     <strong>HTML, CSS, JavaScript, Git</strong> e <strong class="strong-curso">Lógica de
-                                        programação.</strong></p>
+                                        programação.</strong>
+                                </p>
                             </div>
                         </div>
 
@@ -185,18 +197,69 @@
 
         <section id="projetos">
             <h2 class="projetos-titulo">Projetos</h2>
-            <div class="curso-item">
-                <img class="curso-imagem" src="Imagens/print_dashboard_2022.png"
-                    alt="Preview do Dashboard de Diversidade Data Hackers 2022">
-                <div class="curso-info">
-                    <h3>Análise de Diversidade no Mercado Tech (Data Hackers 2022)</h3>
-                    <a href="https://datastudio.google.com/reporting/cdd9d698-1c6f-4c4b-adca-90fc63f640e8/page/I26yF"
-                        target="_blank" class="link">Ver Dashboard Interativo</a>
-                    <p>Dashboard interativo desenvolvido no Looker Studio com base na pesquisa do Data Hackers 2022. O
-                        projeto analisa dados demográficos (gênero, cor/raça, idade, PCD), cruzamentos de carreira
-                        (cargos, salários, modelos de trabalho) e fatores sociais de diversidade no ecossistema de
-                        tecnologia.</p>
-                </div>
+            <div class="projetos-container">
+                <article class="projeto-card">
+                    <div class="projeto-imagem-wrapper">
+                        <img class="projeto-imagem" src="Imagens/print_dashboard_2022.png"
+                            alt="Preview do Dashboard de Diversidade Data Hackers 2022">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Análise de Diversidade no Mercado Tech (Data Hackers 2022)</h3>
+                        <div class="projeto-tags">
+                            <span class="tag">Looker Studio</span>
+                            <span class="tag">Análise de Dados</span>
+                            <span class="tag">Business Intelligence</span>
+                            <span class="tag">Data Hackers</span>
+                        </div>
+                        <p>Dashboard interativo desenvolvido no Looker Studio com base na pesquisa do Data Hackers 2022.
+                            O
+                            projeto analisa dados demográficos (gênero, cor/raça, idade, PCD), cruzamentos de carreira
+                            (cargos, salários, modelos de trabalho) e fatores sociais de diversidade no ecossistema de
+                            tecnologia.</p>
+                        <a href="https://datastudio.google.com/reporting/cdd9d698-1c6f-4c4b-adca-90fc63f640e8/page/I26yF"
+                            target="_blank" class="btn-projeto">
+                            <span>Ver Dashboard Interativo</span>
+                            <svg class="btn-icone" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Projeto 2: Dashboard Pessoal (PrograMaria Sprint IA) -->
+                <article class="projeto-card">
+                    <div class="projeto-imagem-wrapper">
+                        <img class="projeto-imagem" src="Imagens/print_dashboard_pessoal.png"
+                            alt="Preview do Dashboard Pessoal Por onde começo hoje?">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Por onde começo hoje? — Dashboard Pessoal</h3>
+                        <div class="projeto-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Vibecoding / IA</span>
+                            <span class="tag">Gmail API</span>
+                            <span class="tag">Google Calendar API</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <p>Dashboard de produtividade integrado com Gmail e Google Calendar via OAuth 2.0. Exibe emails
+                            não lidos, reuniões do dia, estimativa de leitura e gráfico semanal. Desenvolvido com
+                            técnicas de <strong>Vibecoding (IA)</strong> no Sprint IA no Trabalho da PrograMaria.</p>
+                        <a href="https://github.com/joyces-lima/Projeto_Dashboard.git" target="_blank" class="btn-projeto">
+                            <span>Ver no GitHub</span>
+                            <svg class="btn-icone" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
