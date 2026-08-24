@@ -35,6 +35,7 @@ strong {
   background-color: #566129;
   padding: 18px 25px;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .logo {
@@ -63,14 +64,18 @@ strong {
 /*Style Sobre*/
 #sobre {
   text-align: justify;
-  background-color: #f8f9ed;
-  padding: 40px 100px;
+  background-color: #f2f3e4;
+  padding: 50px 20px;
   border-radius: 10px;
+  margin-bottom: 20px; /* Cria um respiro antes da seção de Formação */
 }
 .container-sobre {
   display: flex;
   align-items: center;
-  gap: 15rem;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 950px;
+  margin: 0 auto;
 }
 .sobre-imagem {
   width: 300px;
@@ -113,6 +118,7 @@ strong {
   padding: 50px 20px;
   background-color:  #f8f9ed;
   border-radius: 10px;
+  margin-bottom: 1%;
 }
 
 .formacao-titulo {
@@ -250,22 +256,28 @@ strong {
 }
 
 .btn-certificado {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-top: 15px;
   padding: 8px 16px;
-  border: 2px solid #566129;
-  color: #566129;
+  border: 2px solid #57123f; /* Trocado para o tom roxo para dar mais destaque */
+  background-color: #57123f;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 6px;
+  font-size: 0.88rem;
+  border-radius: 6px; /* Borda arredondada no estilo pill/badge */
   transition: all 0.3s ease;
 }
 
 .btn-certificado:hover {
   background-color: #566129;
+  border: 2px solid #566129;
   color: #ffffff;
-} 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(87, 18, 63, 0.2);
+}
 
 /* Container principal do carrossel: alinha os botões laterais (Anterior / Próximo) e a janela central */
 .carrossel-container {
@@ -404,6 +416,7 @@ strong {
 #projetos {
   background-color: #f8f9ed;
   padding: 50px 20px;
+  border-radius: 10px;
 }
 
 .projetos-titulo {
@@ -571,22 +584,48 @@ strong {
 .rodape-contatos {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+}
+
+.rodape-contatos p {
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .rodape-contatos a {
   color: #f8f9ed;
   text-decoration: none;
   font-size: 15px;
-  margin-left: 5px;
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Efeito ao passar o mouse nos links do rodapé */
+.rodape-contatos a:hover {
+  opacity: 0.85;
+  transform: translateX(3px);
 }
 
 .rodape-contatos img {
   vertical-align: middle;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .logo-joyce {
   height: 140px;
+}
+
+/* Espaçamento geral entre seções */
+#formacao, #cursos, #projetos {
+  margin-bottom: 20px;
+}
+
+/* Fundo sutilmente diferenciado para a seção de Cursos */
+#cursos {
+  background-color: #f2f3e4; /* Um tom levemente mais escuro do bege pastel */
+  border-radius: 10px;
 }
